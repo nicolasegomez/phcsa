@@ -2,14 +2,20 @@ package com.arco.phcsa.dominio;
 
 public class Unidad {
 	
-	int idUnidad;
+	long idUnidad;
 	int numero;
 	String direccionExtendida;
 	
-	public int getIdUnidad() {
+	public Unidad(long id, int numero, String direccionExtendida) {
+		idUnidad = id;
+		this.numero = numero;
+		this.direccionExtendida = direccionExtendida;
+	}
+	
+	public long getIdUnidad() {
 		return idUnidad;
 	}
-	public void setIdUnidad(int idUnidad) {
+	public void setIdUnidad(long idUnidad) {
 		this.idUnidad = idUnidad;
 	}
 	public int getNumero() {
