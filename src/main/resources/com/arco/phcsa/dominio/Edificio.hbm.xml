@@ -1,0 +1,18 @@
+<hibernate-mapping package="com.arco.phcsa.dominio">
+
+    <class name="Edificio" table="EDIFICIO">
+        <id name="idEdificio" column="ID_EDIFICIO">
+            <generator class="native"/>
+        </id>
+        <property name="direccion" column="DIRECCION"/>
+        
+        <set name="unidades" table="UNIDAD" 
+				inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_UNIDAD" not-null="true" />
+            </key>
+            <one-to-many class="com.arco.phcsa.dominio.Unidad" />
+        </set>        
+    </class>
+
+</hibernate-mapping>

@@ -8,7 +8,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.arco.phcsa.dominio.Edificio;;
+import org.hibernate.Session;
+
+import com.arco.phcsa.dominio.Edificio;
+import com.arco.phcsa.utils.HibernateUtils;
 
 public class ControladorEdificios extends HttpServlet {
 
@@ -17,6 +20,17 @@ public class ControladorEdificios extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
+		
+		
+    
+        Session session = HibernateUtils.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+
+        Edificio edificio = new Edificio(1,"Larrea 1354");
+        session.save(edificio);
+        session.getTransaction().commit();
+        HibernateUtils.getSessionFactory().close();
+		
 		RequestDispatcher dispatcher = null;
 		req.setAttribute("edificios", Edificio.dameTodos());
 		dispatcher = req.getRequestDispatcher("MostrarEdificios.jsp");

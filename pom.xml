@@ -12,6 +12,8 @@
 		<spring.version>3.0.5.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<jdk.version>1.7</jdk.version>
+		<hibernate.version>3.6.5.Final</hibernate.version>
+		<hsqldb.version>1.8.0.10</hsqldb.version>
 	</properties>
 
 	<dependencies>
@@ -53,6 +55,20 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        
+        <dependency>
+			<groupId>hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>${hsqldb.version}</version>
+		</dependency>
+        
+        
 	</dependencies>
 	<build>
 		<finalName>phcsa</finalName>

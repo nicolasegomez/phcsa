@@ -1,0 +1,11 @@
+<hibernate-mapping package="com.arco.phcsa.dominio">
+
+    <class name="Unidad" table="UNIDAD">
+        <id name="idUnidad" column="ID_UNIDAD">
+            <generator class="native"/>
+        </id>
+        <property name="numero" column="NUMERO"/>
+        <property name="direccionExtendida" column="DIRECCION_EXTENDIDA"/> 
+    </class>
+
+</hibernate-mapping>
