@@ -28,9 +28,7 @@
 	</servlet-mapping>  
   
     <servlet-mapping>
-    	<servlet-name>
-  	        ControladorEdificios
-  		</servlet-name>
+    	<servlet-name>ControladorEdificios</servlet-name>
   		<url-pattern>/MostrarEdificios</url-pattern>
   	</servlet-mapping>
   

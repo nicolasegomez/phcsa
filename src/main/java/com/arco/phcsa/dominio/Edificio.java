@@ -3,7 +3,11 @@ package com.arco.phcsa.dominio;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 public class Edificio {
+	
+	private static final Logger log = Logger.getLogger(Edificio.class.getCanonicalName());
 	
 	private long idEdificio;
 	private String direccion;
@@ -41,6 +45,7 @@ public class Edificio {
 	}
 	
 	public static List<Edificio> dameTodos(){
+		log.debug("Retornando todos los edificios");
 		List<Edificio> resultList = new ArrayList<Edificio>();
 		Edificio edificioLarrea1354 = new Edificio(1, "Larrea 1354");
 		Unidad larrea1354_5to68 = new Unidad(1, 1, "5to 68");
