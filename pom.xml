@@ -13,8 +13,8 @@
 		<junit.version>4.11</junit.version>
 		<jdk.version>1.7</jdk.version>
 		<hibernate.version>3.6.5.Final</hibernate.version>
-		<hsqldb.version>1.8.0.10</hsqldb.version>
 		<javassist.version>3.12.1.GA</javassist.version>
+		<postgresql.version>9.2-1002-jdbc4</postgresql.version>
 	</properties>
 
 	<dependencies>
@@ -62,13 +62,7 @@
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate.version}</version>
         </dependency>
-        
-        <dependency>
-			<groupId>hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-			<version>${hsqldb.version}</version>
-		</dependency>
-		
+        	
 		<!-- Hibernate gives you a choice of bytecode providers between cglib and javassist -->
         <dependency>
             <groupId>javassist</groupId>
@@ -76,6 +70,12 @@
             <version>${javassist.version}</version>
         </dependency>
         
+        
+        <dependency>
+		    <groupId>org.postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>${postgresql.version}</version>
+		</dependency>
         
 	</dependencies>
 	<build>
