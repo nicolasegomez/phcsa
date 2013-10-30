@@ -1,5 +1,7 @@
 <html>
 <body>
-<h1>PHCSA</h1>
+<script language="javascript">
+    window.location.href = "home"
+</script>
 </body>
 </html>
