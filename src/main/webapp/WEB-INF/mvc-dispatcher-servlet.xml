@@ -12,8 +12,6 @@
 
 	<context:component-scan base-package="com.arco.phcsa.controladores" />
 
-
-
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">

@@ -4,12 +4,7 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-	  <description></description>
-	  <display-name>ControladorEdificios</display-name>
-	  <servlet-name>ControladorEdificios</servlet-name>
-	  <servlet-class>com.arco.phcsa.controladores.ControladorEdificios</servlet-class>
-  </servlet>
+  
   <servlet>
 		<servlet-name>mvc-dispatcher</servlet-name>
 		<servlet-class>
@@ -21,12 +16,7 @@
 		<servlet-name>mvc-dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>  
-  
-    <servlet-mapping>
-    	<servlet-name>ControladorEdificios</servlet-name>
-  		<url-pattern>/MostrarEdificios</url-pattern>
-  	</servlet-mapping>
-  
+    
    	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/mvc-dispatcher-servlet.xml</param-value>
