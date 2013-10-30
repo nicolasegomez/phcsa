@@ -11,7 +11,10 @@ public class Edificio {
 	
 	private long idEdificio;
 	private String direccion;
-	private List<Unidad> unidades; 
+	private List<Unidad> unidades;
+	
+	public Edificio() {
+	}
 	
 	public Edificio(long id, String direccion) {
 		idEdificio = id;
@@ -47,7 +50,7 @@ public class Edificio {
 	public static List<Edificio> dameTodos(){
 		log.debug("Retornando todos los edificios");
 		List<Edificio> resultList = new ArrayList<Edificio>();
-		Edificio edificioLarrea1354 = new Edificio(1, "Larrea 1354");
+/*		Edificio edificioLarrea1354 = new Edificio(1, "Larrea 1354");
 		Unidad larrea1354_5to68 = new Unidad(1, 1, "5to 68");
 		edificioLarrea1354.addUnidad(larrea1354_5to68);
 		
@@ -60,7 +63,7 @@ public class Edificio {
 		resultList.add(edificioNico);
 		
 		Edificio edificioMelli = new Edificio(3, "Marcelo T. de Alvear 1934");
-		edificioMelli.addUnidad(new Unidad(3,1,"2do B"));
+		edificioMelli.addUnidad(new Unidad(3,1,"2do B"));*/
 		
 		return resultList;
 	}
@@ -72,3 +75,4 @@ public class Edificio {
 	}
 
 }
+
