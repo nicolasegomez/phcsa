@@ -64,5 +64,11 @@ public class Edificio {
 		
 		return resultList;
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "metodo To String";
+	}
 
 }
