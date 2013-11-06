@@ -10,6 +10,7 @@
 
 	<properties>
 		<spring.version>3.0.5.RELEASE</spring.version>
+		<springdata.version>1.4.2.RELEASE</springdata.version>
 		<junit.version>4.11</junit.version>
 		<jdk.version>1.7</jdk.version>
 		<hibernate.version>3.6.5.Final</hibernate.version>
@@ -36,6 +37,12 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
+		</dependency>
+		
+	    <dependency>
+		    <groupId>org.springframework.data</groupId>
+		    <artifactId>spring-data-jpa</artifactId>
+		    <version>1.4.2.RELEASE</version>
 		</dependency>
 		
 		<dependency>
